@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Group Indentification app</title>
+<style type="text/css">
+    input{
+        height: 40px;
+        width: 70px;
+    }
+    
+    label{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    pre{
+        font-family: sans;
+    }
+    
+    li{
+        list-style: none;
+        margin: 0 20px;
+        color: black;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .flex-center{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+    
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="flex-center">
+    <ul class="flex-center">
+        <a href="about.html">
+            <li>About Project</li>
+        </a><a href="project1.html">
+            <li>Project 1</li>
+        </a><a href="index.html">
+            <li>Project 2</li>
+        </a>
+    </ul>
+</div>
+    
+    <!-- Main -->
+<script type="text/javascript">
+var a, b, c;
+a=prompt("Enter the value of A: ");
+b=prompt("Enter the value of B: ");
+c=prompt("Enter the value of D: ");
+
+if(a=="n" && b=="n" && c=="n"){
+document.write("<h1>The blood group is O-")
+}
+
+else if(a=="n" && b=="n" && c=="y"){
+document.write("<h1>The blood group is O+")
+}
+
+else if(a=="y" && b=="n" && c=="y"){
+document.write("<h1>The blood group is A+")
+}
+
+else if(a=="y" && b=="n" && c=="n"){
+document.write("<h1>The blood group is A-")
+}
+
+else if(a=="n" && b=="y" && c=="y"){
+document.write("<h1>The blood group is B+")
+}
+
+else if(a=="n" && b=="y" && c=="n"){
+document.write("<h1>The blood group is B-")
+}
+
+else if(a=="y" && b=="y" && c=="y"){
+document.write("<h1>The blood group is AB+")
+}
+
+else if(a=="y" && b=="y" && c=="n"){
+document.write("<h1>The blood group is AB-")
+}
+
+//else if(a!="n" && b!="n" && c!="n" && a!="y" && b!="y" && c!="y"){
+//document.write("<h1>Entered value is incorrect. Please enter the correct value")
+//}
+
+else {
+document.write("<h1>Entered value is incorrect. Please enter the correct value.")
+}
+
+</script>
+</body>
+</html>

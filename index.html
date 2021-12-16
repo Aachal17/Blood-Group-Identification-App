@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Group Identification app</title>
+<style type="text/css">
+input{
+    height: 40px;
+    width: 70px;
+}
+
+label{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+pre{
+    font-family: sans;
+}
+
+li{
+    list-style: none;
+    margin: 0 20px;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-center{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="flex-center">
+    <ul class="flex-center">
+        <a href="about.html">
+            <li>About Project</li>
+        </a><a href="project1.html">
+            <li>Project 1</li>
+        </a><a href="index.html">
+            <li>Project 2</li>
+        </a>
+    </ul>
+</div>
+
+<!-- Main -->
+<form method="GET">
+<div class="flex-center">
+<pre>
+<center><label for="A">A: </label></center>
+<input type="text" name="A" id="A" reuiqred value="">
+</pre>
+
+<pre>
+<center><label for="B">B: </label></center>
+<input type="text" name="B" id="B" reuiqred value="">
+</pre>
+
+<pre>
+<center><label for="D">D: </label></center>
+<input type="text" name="D" id="D" reuiqred value="">
+</pre>
+</div>
+<br><br>
+<center>
+<input type="submit" onclick="Diva()">
+</center>
+</form>
+
+<script type="text/javascript">
+
+function Diva(){
+var a, b, c;
+a=document.getElementById("A").value;
+b=document.getElementById("B").value;
+c=document.getElementById("D").value;
+
+document.write("<center><h1>Test Result</h1></center>")
+document.write("Value of 'A' = " +a)
+document.write("<br>Value of 'B' = " +b)
+document.write("<br>Value of 'D' = " +c)
+
+if(a=="n" && b=="n" && c=="n" || a=="N" && b=="N" && c=="N"){
+document.write("<h1>The blood group is O-")
+}
+
+else if(a=="n" && b=="n" && c=="y" || a=="N" && b=="N" && c=="Y"){
+document.write("<h1>The blood group is O+")
+}
+
+else if(a=="y" && b=="n" && c=="y" || a=="Y" && b=="N" && c=="Y"){
+document.write("<h1>The blood group is A+")
+}
+
+else if(a=="y" && b=="n" && c=="n" || a=="Y" && b=="N" && c=="N"){
+document.write("<h1>The blood group is A-")
+}
+
+else if(a=="n" && b=="y" && c=="y" || a=="N" && b=="Y" && c=="Y"){
+document.write("<h1>The blood group is B+")
+}
+
+else if(a=="n" && b=="y" && c=="n"|| a=="N" && b=="Y" && c=="YN"){
+document.write("<h1>The blood group is B-")
+}
+
+else if(a=="y" && b=="y" && c=="y"|| a=="Y" && b=="Y" && c=="Y"){
+document.write("<h1>The blood group is AB+")
+}
+
+else if(a=="y" && b=="y" && c=="n"|| a=="Y" && b=="Y" && c=="N"){
+document.write("<h1>The blood group is AB-")
+}
+
+//else if(a!="n" && b!="n" && c!="n" && a!="y" && b!="y" && c!="y"){
+//document.write("<h1>Entered value is incorrect. Please enter the correct value")
+//}
+else{
+document.write("<h1>Entered value is incorrect. Please enter the correct value.")
+}
+}
+
+</script>
+</body>
+</html>
